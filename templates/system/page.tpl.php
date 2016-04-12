@@ -72,10 +72,12 @@
  * @ingroup themeable
  */
 ?>
+<div class="menu-wrapper">
+    <?php print(render($page['menu'])); ?>
+</div>
   <div id="page-wrapper"><div id="page">
-
     <div id="header"><div class="section clearfix">
-      <?php print(render($page['menu'])); ?>
+
       <?php print render($page['header']); ?>
 
     </div></div> <!-- /.section, /#header -->
