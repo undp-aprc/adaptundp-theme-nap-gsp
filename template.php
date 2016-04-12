@@ -7,12 +7,6 @@ function nap_preprocess_page(&$variables) {
         'links' => menu_build_tree('menu-nap-gsp-menu', array(array('max_depth'=>1)))
     );
 
-    $variables['page']['newsletter'] = array(
-        '#theme' => 'nap_gsp_newsletter',
-    );
-
-
-
     if ($variables['is_front']) {
         $variables['title_prefix'] = '<h1 class="hidden">';
     };
@@ -66,6 +60,7 @@ function nap_preprocess_nap_gsp_menu(&$variables) {
 }
 
 function nap_page_alter(&$page) {
+    cache_clear_all('*', 'cache', TRUE);
     $theme_path = drupal_get_path('theme','nap');
     /* Add global JS files */
     //drupal_add_js($theme_path.'/js/plugins/jquery.matchHeight-min.js', array('type'=>'file','scope'=>'footer','every_page'=>TRUE));
