@@ -78,21 +78,26 @@
  *
  * @ingroup themeable
  */
+hide($content['links']);
+hide($content['field_event_date']);
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-    <?php print render($title_prefix); ?>
-    <div class="col-md-2">
-        <?php if ($content['field_event_date']): ?>
-            <?php print(render(theme('date_dynamic_icon', array('elements'=>array('date'=>$variables['date_parts']))))); ?>
-        <?php endif; ?>
-    </div>
-    <div class="col-md-10"<?php print $content_attributes; ?>>
-        <?php if (!$page): ?>
-            <h3<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h3>
-        <?php endif; ?>
-        <?php print render($title_suffix); ?>
-        <?php hide($content['links']); ?>
-        <?php hide($content['field_event_date']); ?>
-        <?php print render($content); ?>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h4>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-2">
+                    <?php if ($content['field_event_date']): ?>
+                        <?php print(render(theme('date_dynamic_icon', array('elements'=>array('date'=>$variables['date_parts']))))); ?>
+                    <?php endif; ?>
+                </div>
+                <div class="col-md-10">
+                    <?php print render($content); ?>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
