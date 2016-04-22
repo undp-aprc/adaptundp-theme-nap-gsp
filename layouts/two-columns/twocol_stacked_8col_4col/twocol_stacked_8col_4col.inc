@@ -2,11 +2,11 @@
 
 // Plugin definition
 $plugin = array(
-  'title' => t('Two column stacked 75%, 25%'),
+  'title' => t('Two column Bootstrap (stacked): 75/25'),
   'category' => t('Columns: 2'),
-  'icon' => 'twocol_stacked.png',
-  'theme' => 'twocol_stacked_75_25',
-  'css' => 'twocol_stacked_75_25.css',
+  'icon' => 'twocol-stacked-8col-4col.png',
+  'theme' => 'twocol_stacked_8col_4col',
+  'css' => 'twocol_stacked_8col_4col.css',
   'regions' => array(
     'top' => t('Top'),
     'left' => t('Left side'),
