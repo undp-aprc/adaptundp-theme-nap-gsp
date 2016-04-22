@@ -98,8 +98,7 @@ function nap_css_alter(&$css) {
 function nap_process_node(&$variables) {
     // Load jQuery UI tabs on project page
     if($variables['type'] == 'project') {
-        drupal_add_library('system','ui.tabs');
-        drupal_add_js(drupal_get_path('theme','cca').'/js/tabs.js');
+        drupal_add_css(drupal_get_path('theme','cca').'/assets/js//bootstrap-vertical-tabs/bootstrap.vertical-tabs.css', array('group' => DRUPAL_THEME));
     }
 }
 
