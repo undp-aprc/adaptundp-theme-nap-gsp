@@ -65,6 +65,7 @@ function nap_page_alter(&$page) {
     /* Add global JS files */
     //drupal_add_js($theme_path.'/js/plugins/jquery.matchHeight-min.js', array('type'=>'file','scope'=>'footer','every_page'=>TRUE));
     drupal_add_js($theme_path.'/js/main.js', array('type'=>'file','scope'=>'footer','every_page'=>TRUE));
+    drupal_add_js($theme_path.'/assets/js/bootstrap/tab.js', array('type'=>'file','scope'=>'footer','every_page'=>TRUE));
 
     /* Make search form and menu blocks available to header template and unset from page array */
     $page['header']['nap_theme_blocks_header']['variables']['search'] =  $page['header']['search_form'];
@@ -96,10 +97,9 @@ function nap_css_alter(&$css) {
 }
 
 function nap_process_node(&$variables) {
+
     // Load jQuery UI tabs on project page
-    if($variables['type'] == 'project') {
-        drupal_add_css(drupal_get_path('theme','cca').'/assets/js/bootstrap-vertical-tabs/bootstrap.vertical-tabs.css', array('group' => DRUPAL_THEME));
-    }
+
 }
 
 function nap_preprocess_node(&$variables) {
@@ -108,6 +108,10 @@ function nap_preprocess_node(&$variables) {
         if (function_exists($function)) {
             $function($variables);
         }
+    }
+
+    if($variables['type'] == 'project') {
+        drupal_add_css(drupal_get_path('theme','nap').'/assets/js/bootstrap-vertical-tabs/bootstrap.vertical-tabs.css', array('group' => DRUPAL_THEME));
     }
 }
 
