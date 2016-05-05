@@ -151,6 +151,9 @@ function nap_preprocess_node__news(&$variables) {
     if ($variables['field_contact_details'][0]['safe_value'] == '') {
         unset($variables['content']['field_contact_details']);
     }
+
+    $theme_path = drupal_get_path('theme','nap');
+    drupal_add_js($theme_path.'/assets/bower_components/matchHeight/jquery.matchHeight-min.js', array('type'=>'file','scope'=>'footer'));
 }
 
 function nap_preprocess_node__resource(&$variables) {

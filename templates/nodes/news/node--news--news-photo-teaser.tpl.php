@@ -1,9 +1,9 @@
 <?php
 
 ?>
-<div class="col-md-4 equal-height">
+<div class="col-md-4">
     <a href="/node/<?php print($node->nid); ?>">
-        <div class="content-box photo-box caption-right">
+        <div class="content-box photo-box caption-right equal-height active">
             <div class="content-first">
                 <?php print(render($content['field_photo']))?>
             </div>

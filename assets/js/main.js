@@ -6,14 +6,25 @@
             });
         });
 
+        $('.equal-height').on('setActiveClass', function(e) {
+            $(this).addClass('active');
+        });
+
+        $('.equal-height').on('setActiveClass', function(e) {
+            $(this).removeClass('active');
+        });
+
+        $('.equal-height.active').matchHeight();
+
+
 }) (jQuery);
 
 function setActive($) {
     $('.equal-height').each(function(i, item) {
         if ($(window).width() > 991) {
-            $(item).addClass('active');
+            $(item).trigger('setActiveClass');
         } else {
-            $(item).removeClass('active');
+            $(item).trigger('removeActiveClass');
         }
     });
 }
