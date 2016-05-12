@@ -80,12 +80,12 @@ hide($content['links']);
  * @ingroup themeable
  */
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> col-sm-3"<?php print $attributes; ?>>
-    <div class="panel panel-default">
-        <div class="panel-heading">
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> col-md-3"<?php print $attributes; ?>>
+    <div class="content-box photo-box caption-right">
+        <div class="col-sm-6">
             <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
         </div>
-        <div class="panel-body">
+        <div class="col-sm-6">
             <?php print(render($content)); ?>
         </div>
     </div>
