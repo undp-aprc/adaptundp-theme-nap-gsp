@@ -82,7 +82,7 @@
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> full-page-slide"<?php print $attributes; ?>>
     <div class="slide-image">
-        <?php print render($content['field_image']); ?>
+        <?php print render($content['field_photo']); ?>
     </div>
     <div class="slide-caption">
         <div class="container">
