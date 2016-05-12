@@ -98,6 +98,7 @@
                 <?php if ($active_groups['group_links']): ?><li><a href="#tab-links" data-toggle="tab">Links</a></li><?php endif;?>
                 <?php if ($active_groups['group_contacts']): ?><li><a href="#tab-contacts" data-toggle="tab">Contacts</a></li><?php endif;?>
             </ul>
+            <a href="/nap-gsp/country-initiatives" class="nav-back"><< Back to Project Explorer</a>
         </div>
         <div id="tabs-pane-content" class="col-xs-9">
             <div class="tab-content">
