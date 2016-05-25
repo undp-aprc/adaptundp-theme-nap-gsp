@@ -86,7 +86,7 @@ hide($content['links']);
             <?php print(render($content['field_thumbnail'])); ?>
         </div>
         <div class="col-sm-6">
-            <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
+            <h2><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
             <?php print(render($content)); ?>
         </div>
     </div>
