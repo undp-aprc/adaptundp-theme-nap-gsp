@@ -81,7 +81,7 @@ hide($content['links']);
  */
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> col-md-6"<?php print $attributes; ?>>
-    <div class="clearfix equal-height">
+    <div class="clearfix content-box equal-height">
         <div class="col-sm-6">
             <?php print(render($content['field_thumbnail'])); ?>
         </div>
