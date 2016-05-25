@@ -82,10 +82,10 @@ hide($content['links']);
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> col-md-6"<?php print $attributes; ?>>
     <div class="clearfix equal-height">
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-xs-2">
             <?php print(render($content['field_thumbnail'])); ?>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-xs-10">
             <h2><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
             <?php print(render($content)); ?>
         </div>
