@@ -88,16 +88,6 @@
       <div id="content" class="column"><div class="section">
         <a id="main-content"></a>
               <div class="container">
-                  <!-- Navigation to LDCs/Non-LDCs -->
-                  <ul class="nav nav-pills">
-                      <li class="nav-item">
-                          <a class="nav-link active" href="/nap-gsp/country-initiatives/ldcs">Support to Least Developed Countries</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="/nap-gsp/country-initiatives/developing-countries">Support to Developing Countries</a>
-                      </li>
-                  </ul>
-                  <!-- End of LDCs/Non-LDCs Nav -->
                   <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
                   <?php print render($title_prefix); ?>
                   <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
