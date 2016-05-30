@@ -81,13 +81,16 @@
  */
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> full-page-slide"<?php print $attributes; ?>>
-    <div class="slide-image">
-        <?php print render($content['field_photo']); ?>
-    </div>
-    <div class="slide-caption">
-        <div class="container">
-            <?php print(render($content['body'])); ?>
-            <a class="btn btn-default" href="<?php print($node_url); ?>">Read More</a>
+    <div class="container">
+        <div class="slide-image">
+            <?php print render($content['field_image']); ?>
+        </div>
+        <div class="slide-caption-wrapper">
+            <div class="slide-caption">
+                <h2><?php print($title); ?></h2>
+                <?php print(render($content['body'])); ?>
+                <a class="btn btn-default" href="<?php print($node_url); ?>">Read More</a>
+            </div>
         </div>
     </div>
 </div>
