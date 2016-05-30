@@ -77,6 +77,7 @@
 </div>
   <div id="page-wrapper"><div id="page">
     <div id="header"><div class="section clearfix">
+        
 
       <?php print render($page['header']); ?>
 
@@ -117,10 +118,4 @@
     <div id="footer"><div class="section">
       <?php print render($page['footer']); ?>
     </div></div> <!-- /.section, /#footer -->
-    <div class="gsp-logo-container">
-        <div class="container">
-            <div class="logo"></div>
-        </div>
-    </div>
-
   </div></div> <!-- /#page, /#page-wrapper -->
