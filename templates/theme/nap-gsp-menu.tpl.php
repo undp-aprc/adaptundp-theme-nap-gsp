@@ -26,7 +26,7 @@
                 <?php endforeach; ?>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" class="btn btn-default">Subscribe to newsletter</a></li>
+                <li><a href="/nap-gsp-e-news-sign-form" class="btn btn-default">Subscribe to newsletter</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
