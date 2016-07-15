@@ -103,7 +103,7 @@ function nap_process_node(&$variables) {
 }
 
 function nap_preprocess_node(&$variables) {
-    if ($variables['type'] == 'project' || $variables['type'] == 'news' || $variables['type'] == 'resource' || $variables['type'] == 'event' || $variables['type'] == 'page') {
+    if ($variables['type'] == 'project' || $variables['type'] == 'news' || $variables['type'] == 'resource' || $variables['type'] == 'event' || $variables['type'] == 'page' || $variables['type'] == 'group_spaces') {
         $function = 'nap_preprocess_node__'.$variables['type'];
         if (function_exists($function)) {
             $function($variables);
@@ -113,6 +113,10 @@ function nap_preprocess_node(&$variables) {
     if($variables['type'] == 'project') {
         drupal_add_css(drupal_get_path('theme','nap').'/assets/js/bootstrap-vertical-tabs/bootstrap.vertical-tabs.css', array('group' => DRUPAL_THEME));
     }
+}
+
+function nap_preprocess_node__group_spaces(&$variables) {
+    drupal_add_library('system', 'ui.tabs');
 }
 
 function nap_preprocess_node__event(&$variables) {
