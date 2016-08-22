@@ -85,11 +85,11 @@
                     </div>
                 </div>
             </a>
-            <a href="/nap-negotiators" class="image-container">
+            <a href="/ldc-negotiators" class="image-container">
                 <div id="image-02">
                     <img src="/sites/all/themes/custom/nap/assets/img/cover-image-02.jpg" />
                     <div class="overlay">
-                        <h1>NAP Negotiators</h1>
+                        <h1>LDC Negotiators</h1>
                     </div>
                 </div>
             </a>
