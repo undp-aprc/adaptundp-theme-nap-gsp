@@ -10,10 +10,8 @@ core = 7.x
 regions[page_top]               = Page Top
 regions[page_bottom]            = Page Bottom
 
+regions[menu]                   = Menu
 regions[header]                 = Header
-regions[menu_1]                 = Menu #1
-regions[menu_2]                 = Menu #2
-regions[menu_3]                 = Menu #3
 
 regions[help]               = Help
 regions[highlighted]        = Highlighted
