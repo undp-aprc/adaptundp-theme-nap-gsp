@@ -2,11 +2,6 @@
 
 function nap_preprocess_page(&$variables) {
 
-    $variables['page']['menu'] = array(
-        '#theme' => 'nap_gsp_menu',
-        'links' => menu_build_tree('menu-nap-gsp-menu', array(array('max_depth'=>1)))
-    );
-
     if ($variables['is_front']) {
         $variables['title_prefix'] = '<h1 class="hidden">';
     };
@@ -28,11 +23,6 @@ function nap_preprocess_page(&$variables) {
 
 function nap_theme(&$existing, $type, $theme, $path) {
     $items = array(
-        'nap_gsp_menu' => array(
-            'render element' => 'element',
-            'template' => 'nap-gsp-menu',
-            'path' => $path.'/templates/theme'
-        ),
         'nap_gsp_newsletter' => array(
             'render element' => 'element',
             'template' => 'nap-gsp-newsletter',
@@ -41,22 +31,6 @@ function nap_theme(&$existing, $type, $theme, $path) {
     );
 
     return $items;
-}
-
-function nap_preprocess_nap_gsp_menu(&$variables) {
-    $links = $variables['element']['links'];
-    $items = Array();
-    $current_path = current_path();
-
-    foreach($links as $link=>$data) {
-        $active_path = ($current_path == $data['link']['href']) ? true : false;
-        $items[] = array(
-            'text' => $data['link']['link_title'],
-            'path' => $data['link']['href'],
-            'active_path' => $active_path
-        );
-    }
-    $variables['element']['menu-items'] = $items;
 }
 
 function nap_page_alter(&$page) {
