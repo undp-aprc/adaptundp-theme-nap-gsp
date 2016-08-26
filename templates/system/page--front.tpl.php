@@ -13,7 +13,7 @@
         <div class="container">
             <h3>Supported Programmes</h3>
             <ul class="supported-programmes">
-                <li>
+                <li class="col-sm-6">
                     <img src="/sites/all/themes/custom/nap/assets/img/cover-image-01.jpg" />
                     <div class="overlay">
                         <div class="logo-container gsp-logo-container">
@@ -23,7 +23,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="col-sm-6">
                     <a href="/ldc-negotiators">
                         <img src="/sites/all/themes/custom/nap/assets/img/cover-image-02.jpg" />
                     </a>
