@@ -1,7 +1,7 @@
 <div class="page-wrapper">
     <div class="header">
         <div class="container">
-            <h2>Global Support Programme</h2>
+            <h2>Global Support Programmes</h2>
             <p>The UN Development Programme and the UN Environment Programme are working jointly on two Global Support Programmes which assist developing countries to adapt to climate change. This UNDP-UNEP collaboration is supporting more than 40 of the most vulnerable countries as they advance their climate change resilience.</p>
             <ul class="gsp-logos">
                 <li class="portrait"><img src="/sites/all/themes/custom/nap/assets/img/logos/undp.svg" /></li>
