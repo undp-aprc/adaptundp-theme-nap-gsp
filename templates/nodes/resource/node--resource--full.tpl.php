@@ -1,6 +1,7 @@
 <?php
 hide($content['field_description']);
 hide($content['field_download']);
+hide($content['field_project']);
 /**
  * @file
  * Default theme implementation to display a node.

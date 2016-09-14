@@ -86,7 +86,12 @@ hide($content['links']);
             <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
         </div>
         <div class="panel-body">
-            <?php print(render($content)); ?>
+            <?php if($content['field_thumbnail']): ?>
+                <div class="col-sm-4"><?php print(render($content['field_thumbnail'])); ?></div>
+                <div class="col-sm-8"><?php print(render($content)); ?></div>
+            <?php else: ?>
+                <div class="col-sm-12"><?php print(render($content)); ?></div>
+            <?php endif; ?>
         </div>
     </div>
 </div>
