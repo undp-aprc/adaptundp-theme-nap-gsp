@@ -6,6 +6,17 @@
             });
         });
 
+
+    $('.equal-height').on('setActiveClass', function(e) {
+            $(this).addClass('active');
+        });
+
+        $('.equal-height').on('setActiveClass', function(e) {
+            $(this).removeClass('active');
+        });
+
+        $('.equal-height.active').matchHeight();
+
     /* For NAPs Training Page */
     /* Custom JS for NAP project page */
     var pageHeight = $('#main .page-width').height();
@@ -29,17 +40,6 @@
                 $('#contentTabsFrench').addClass('show');
         }
     });
-
-
-    $('.equal-height').on('setActiveClass', function(e) {
-            $(this).addClass('active');
-        });
-
-        $('.equal-height').on('setActiveClass', function(e) {
-            $(this).removeClass('active');
-        });
-
-        $('.equal-height.active').matchHeight();
 
 }) (jQuery);
 
